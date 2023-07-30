@@ -1,0 +1,40 @@
+.dialog{
+    display: none;
+    position:fixed;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    left: 25%;
+    top:25%;
+    background-color: rgb(183, 183, 128);
+    padding: 1rem;
+    text-align: center;
+}
+
+.monthly_table,.yearly_table{
+    width: 100%;
+}
+table,td,th{
+    border: 1px solid black;
+}
+#report_download{
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    padding: .5rem;
+}
+.report_center{
+    text-align: center;
+}
+#iframe{
+    width: 80%;
+    height: 300px;
+}
+
+#reports_dest{
+    width: 100%;
+}
+
+#paginationButtonHolder{
+    margin-left:5rem;
+}

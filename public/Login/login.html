@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker login</title>
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+
+<body>
+    <h1>Expense Tracker</h1>
+    <h3>Login page</h3>
+    <form id="loginForm">
+        <label for="email">Email
+        </label>
+        <input type="email" id="email" required>
+        <label for="password">Password
+        </label>
+        <input type="password" id="password" required>
+        <button type="submit">login</button>
+    </form><br>
+    <label for="login">New user?</label>
+    <a href="../Signup/signup.html" id="login">
+    <button>Signup Now</button></a>
+    <label for="forgetPasswordBtn">Forget Password? </label>
+    <button id="forgetPasswordBtn">reset password</button>
+    <div id="dialog" class="dialog">
+        <h1>Forget Password</h1>
+        <form id="forgetPasswordForm"><hr><br>
+            <label for="yourEmail">Email:</label>
+            <input type="email" id="yourEmail"><br><br>
+            <button type="submit">Get reset link</button>
+        </form>
+    </div>
+    <span id="dest"></span>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="./login.js"></script>
+</body>
+</html>

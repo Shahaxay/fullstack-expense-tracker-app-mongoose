@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Home Page</title>
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
+    <h1>Add Expense</h1>
+    <form id="addProduct">
+        <label for="amount">Choose expenseamount:</label>
+        <input type="text" id="amount">
+        <label for="desc">description:</label>
+        <input type="text" id="desc">
+        <label for="cat">Choose a category:</label>
+        <select name="category" id="cat">
+            <option value="food">food</option>
+            <option value="petrol">petrol</option>
+            <option value="salary">salary</option>
+        </select>
+        <button type="submit">Add Expenses</button>
+    </form>
+        <button id="buyPremiumButton">Buy Premium</button>
+        <button id="download-report-btn">Download Report</button>
+        <span id="premium_user_dest"></span>
+        <button hidden id="show-leaderboard-btn">show leaderboard</button>
+        <button id="view-report-btn" hidden>View Report</button>
+        <div id="expense-analyse-button-group" hidden>
+            <p>View Expense On The Basis:</p>
+            <button id="daily-expense-btn">Daily</button>
+            <button id="weekly-expense-btn">Weakly</button>
+            <button id="monthly-expense-btn">Monthly</button>
+            <br>
+            <iframe id="iframe" src="../Daily_Expense_Analysis/dailyExpenseAnalysis.html"></iframe>
+        </div>
+
+        <h1>Expenses</h1>
+        <ul id="addExpense_dest"></ul>
+        <span id="pagination-btn"></span>
+        <div hidden id="leaderboard">
+            <h1>LeaderBoard</h1>
+            <ul id="liaderboard_item"></ul>
+        </div>
+        
+        <table id="reports_dest" hidden>
+            <caption>Expense Report Log</caption>
+            <tr>
+                <th>Date</th>
+                <th>Reports link</th>
+            </tr>
+        </table>
+        
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./home.js"></script>
+</body>
+</html> 
